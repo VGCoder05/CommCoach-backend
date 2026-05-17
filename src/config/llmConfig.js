@@ -17,7 +17,7 @@ const llmProviders = [
     id: 'gemini-2',
     apiKey: process.env.GEMINI_API_KEY_2,
     dailyLimit: parseInt(process.env.GEMINI_FREE_LIMIT) || 50,
-    model: 'gemini-pro',
+    model: 'gemini-2.5-flash',
     priority: 2,
   },
   {
