@@ -1,0 +1,25 @@
+# Server
+PORT=5000
+NODE_ENV=development
+
+# Database
+MONGODB_URI=mongodb://localhost:27017/communication-coach
+
+# JWT
+JWT_SECRET=your-super-secret-jwt-key-change-this
+JWT_EXPIRE=7d
+
+# LLM APIs (Add as many as you want)
+GEMINI_API_KEY_1=your-gemini-key-1
+GEMINI_API_KEY_2=your-gemini-key-2
+GEMINI_API_KEY_3=your-gemini-key-3
+
+OPENAI_API_KEY_1=your-openai-key-1
+OPENAI_API_KEY_2=your-openai-key-2
+
+ANTHROPIC_API_KEY_1=your-anthropic-key-1
+
+# LLM Quota Limits (requests per day)
+GEMINI_FREE_LIMIT=50
+OPENAI_FREE_LIMIT=20
+ANTHROPIC_FREE_LIMIT=10
