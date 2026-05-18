@@ -78,8 +78,9 @@ class LLMRotationManager {
       throw new Error('All LLM providers failed or reached limits');
     }
 
+    let provider = null;
     try {
-      const provider = await this.getAvailableProvider();
+      provider = await this.getAvailableProvider();
       console.log(`🤖 Using LLM provider: ${provider.id} (${provider.name})`);
 
       let response;
